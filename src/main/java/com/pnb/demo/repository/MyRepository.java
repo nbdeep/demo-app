@@ -9,7 +9,7 @@ public class MyRepository {
 
     public List<String> getAllDetails() {
        
-
+    return null;
     }
 
 }
