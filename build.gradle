@@ -19,10 +19,16 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.5.3'
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.3'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+	testCompileOnly 'org.junit.jupiter:junit-jupiter-params:5.7.2'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+	testCompileOnly 'org.mockito:mockito-core:3.11.2'
+	testCompileOnly 'org.mockito:mockito-junit-jupiter:3.11.2'
+
 }
 
 test {
