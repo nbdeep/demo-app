@@ -39,6 +39,7 @@ class MockitoAnnotationTest {
         assertEquals(1, spyList.size());
         //call doReturn for Spy
         doReturn(100).when(spyList).size();
+        System.out.println("test checkin");
         assertEquals(100, spyList.size());
     }
 
