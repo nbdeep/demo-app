@@ -48,6 +48,7 @@ class MockitoAnnotationTest {
 
         Assertions.assertThrows(IndexOutOfBoundsException.class,
                 () -> {
+                    System.out.println("test checkin");
                     System.out.println(mockList.size());
                     mockList.get(200);
                 });
