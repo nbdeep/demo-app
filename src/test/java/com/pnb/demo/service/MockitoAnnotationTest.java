@@ -25,6 +25,7 @@ class MockitoAnnotationTest {
 
     @Test
      void whenNotUseMockAnnotation_thenCorrect() {
+         System.out.println("direct change in git");
         mockList.add("one");
         Mockito.verify(mockList).add("one");
         assertEquals(0, mockList.size());
